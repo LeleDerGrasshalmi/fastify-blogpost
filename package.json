@@ -4,12 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "yarn tsc && node ./dist/test/test.js"
     },
     "keywords": [],
     "author": "Lele",
     "license": "ISC",
     "dependencies": {
+        "fastify": "^4.21.0",
+        "fastify-plugin": "^4.5.1",
         "typescript": "^5.0.3"
     },
     "devDependencies": {

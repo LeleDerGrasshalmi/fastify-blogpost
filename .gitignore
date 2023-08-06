@@ -1,3 +1,6 @@
 # module files
 node_modules/
 dist/
+
+# test files
+test/data

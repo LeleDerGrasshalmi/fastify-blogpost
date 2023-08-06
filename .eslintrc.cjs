@@ -176,4 +176,10 @@ module.exports = {
         indent: 'off',
         '@typescript-eslint/indent': 'off',
     },
+    overrides: [{
+        files: ['test/**/*.ts'],
+        rules: {
+            'import/prefer-default-export': 'off',
+        },
+    }],
 };
