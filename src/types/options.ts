@@ -1,10 +1,10 @@
 import type { Author, AuthorFilter, AuthorPayload } from './author';
-// import type { Blogpost, BlogpostPayload } from './blogpost';
+import type { Blogpost, BlogpostFilter, BlogpostPayload } from './blogpost';
 
 export interface PluginOptions {
     actions: {
         authors: ActionFunctions<Author, AuthorFilter, AuthorPayload>;
-        // blogposts: ActionFunctions<Blogpost, unknown, BlogpostPayload>;
+        blogposts: ActionFunctions<Blogpost, BlogpostFilter, BlogpostPayload>;
     };
 }
 

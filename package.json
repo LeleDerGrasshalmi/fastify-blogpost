@@ -10,6 +10,8 @@
     "author": "Lele",
     "license": "ISC",
     "dependencies": {
+        "@fastify/type-provider-typebox": "^3.4.0",
+        "@sinclair/typebox": "^0.30.4",
         "fastify": "^4.21.0",
         "fastify-plugin": "^4.5.1",
         "typescript": "^5.0.3"

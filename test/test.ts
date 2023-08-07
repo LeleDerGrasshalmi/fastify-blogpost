@@ -5,6 +5,7 @@ import fastify from 'fastify';
 import blogpostPlugin from '../src/plugin';
 
 import authorHandler from './handler/author';
+import blogpostHandler from './handler/blogpost';
 
 // For Testing we store data in files
 const main = async () => {
@@ -20,6 +21,7 @@ const main = async () => {
     await app.register(blogpostPlugin, {
         actions: {
             authors: authorHandler,
+            blogposts: blogpostHandler,
         },
     });
 
